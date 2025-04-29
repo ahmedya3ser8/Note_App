@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     {
       index: true, 
       element: 
-        <Suspense fallback='loading please wait...'>
+        <Suspense>
           <ProtectedRoute>
             <Home />
           </ProtectedRoute>
@@ -21,14 +21,14 @@ const router = createBrowserRouter([
     {
       path: 'auth/register', 
       element: 
-        <Suspense fallback='loading please wait...'>
+        <Suspense>
           <Register />
         </Suspense>
     },
     {
       path: 'auth/login', 
       element: 
-        <Suspense fallback='loading please wait...'>
+        <Suspense>
           <Login />
         </Suspense>
     },
